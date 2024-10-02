@@ -1,0 +1,153 @@
+html {
+  height: 100%;
+}
+
+.body {
+  width: 100%;
+  margin: 0px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  align-content: space-around;
+  position: absolute;
+  top: 45vh;
+  z-index: 10;
+}
+
+body,
+.fliper h1,
+.fliper p,
+.fliper .button {
+  transition: all .2s ease-in-out;
+}
+
+/* body.light-theme {
+  background-color: #151515;
+} */
+
+body.light-theme .fliper h1 {
+  color: #FFFFFF;
+}
+
+body.light-theme .fliper p {
+  color: #FFFFFF;
+}
+
+body.light-theme .buttons .button {
+  color: #FFFFFF;
+  border-color: #FFFFFF;
+}
+
+body.light-theme .buttons .button:hover {
+  color: #151515;
+  background-color: #FFFFFF;
+}
+
+.fliper {
+  font-family: 'Poppins', sans-serif;
+  width: 550px;
+  height: 378px;
+  margin: auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.fliper .flipdown {
+  margin: auto;
+  transform: scale(1.8);
+}
+
+.fliper h1 {
+  text-align: center;
+  font-weight: 800;
+  font-size: 2.5rem;
+  margin-top: 0;
+  margin-bottom: 3.5rem;
+  text-transform: uppercase;
+  line-height: 3rem;
+}
+
+.fliper p {
+  text-align: center;
+  font-weight: 100;
+  margin-top: 0;
+  margin-bottom: 35px;
+}
+
+.fliper .buttons {
+  width: 100%;
+  height: 50px;
+  margin: 50px auto 0px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.fliper .buttons p {
+  height: 50px;
+  line-height: 50px;
+  font-weight: 400;
+  padding: 0px 25px 0px 0px;
+  color: #333;
+  margin: 0px;
+}
+
+.fliper .button {
+  display: inline-block;
+  height: 50px;
+  box-sizing: border-box;
+  line-height: 46px;
+  text-decoration: none;
+  color: #333;
+  padding: 0px 20px;
+  border: solid 2px #333;
+  border-radius: 4px;
+  text-transform: uppercase;
+  font-weight: 700;
+  transition: all .2s ease-in-out;
+}
+
+.fliper .button:hover {
+  background-color: #333;
+  color: #FFF;
+}
+
+.fliper .button i {
+  margin-right: 5px;
+}
+
+@media(max-width: 550px) {
+  .fliper {
+    width: 100%;
+    height: 362px;
+  }
+
+  .fliper h1 {
+    font-size: 2.5em;
+  }
+
+  .fliper p {
+    margin-bottom: 25px;
+  }
+
+  .fliper .buttons {
+    width: 100%;
+    margin-top: 25px;
+    text-align: center;
+    display: block;
+  }
+
+  .fliper .buttons p,
+  .fliper .buttons a {
+    float: none;
+    margin: 0 auto;
+  }
+
+  .fliper .buttons p {
+    padding-right: 0px;
+  }
+
+  .fliper .buttons a {
+    display: inline-block;
+  }
+}
